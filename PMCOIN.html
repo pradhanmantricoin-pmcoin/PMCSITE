@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="scroll-restoration" content="manual">
+  <title>Pradhan Mantri Coin</title>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0e11;
+      color: #eaecef;
+    }
+
+    header {
+      background-color: #1e2329;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 10px 0 0;
+      color: #f0b90b;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #f0b90b;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #1e2329;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #f0b90b;
+      border-bottom: 2px solid #2b3139;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    ul li a {
+      color: #f0f5ff;
+      text-decoration: underline;
+    }
+
+    p, li {
+      color: #d1d5db;
+      line-height: 1.6;
+    }
+
+    a.btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f0b90b;
+      color: #0b0e11;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #1e2329;
+      color: #a1a1aa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .contract-copy {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    .copy-icon {
+      cursor: pointer;
+      color: #f0b90b;
+      font-size: 18px;
+    }
+
+    .tooltip {
+      position: absolute;
+      bottom: 120%;
+      left: 30px;
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      display: none;
+      opacity: 0.9;
+    }
+
+    .copy-icon:hover + .tooltip {
+      display: block;
+    }
+
+    code {
+      font-family: monospace;
+      background-color: #2b3139;
+      padding: 5px 8px;
+      border-radius: 4px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="PMC Logo" />
+    <h1>Pradhan Mantri Coin (PMC)</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#community">Community</a>
+      <a href="#what">What is Crypto?</a>
+      <a href="#need">Why You Need</a>
+      <a href="#growth">Crypto Growth</a>
+      <a href="#buy">Buy PMC</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About PMC</h2>
+    <p>
+      Pradhan Mantri Coin (PMC) is a meme-based cryptocurrency launched as a tribute to leadership, vision, and nationalism. Inspired by global meme coins, PMC aims to create a strong desi Web3 community.
+    </p>
+    <a class="btn" href="https://t.me/pradhanmantricoin" target="_blank">Join Telegram</a>
+  </section>
+
+  <section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <ul>
+      <li>Total Supply: 100,000,000 PMC</li>
+      <li>Burn: Enabled</li>
+      <li>Ownership: Renounce-ready</li>
+    </ul>
+  </section>
+
+  <section id="community">
+    <h2>Community & Links</h2>
+    <ul>
+      <li><a href="https://t.me/pradhanmantricoin" target="_blank">Telegram Group</a></li>
+      <li><a href="https://x.com/PradhanMcoin" target="_blank">Twitter (X)</a></li>
+    </ul>
+    <div class="contract-copy">
+      <code id="contract">0xe4a8aed3df947db41f49a9b4adcb8309e179d928</code>
+      <span class="copy-icon" onclick="copyContract()">📋</span>
+      <span class="tooltip">Copy</span>
+    </div>
+  </section>
+
+  <section id="what">
+    <h2>What is Cryptocurrency?</h2>
+    <p>
+      Cryptocurrency is a form of digital currency that uses blockchain technology for secure and transparent transactions. It eliminates the need for intermediaries like banks and is decentralized.
+    </p>
+  </section>
+
+  <section id="need">
+    <h2>Why You Need Crypto</h2>
+    <p>
+      Crypto empowers individuals with financial freedom, global transactions, and investment opportunities. It provides access to decentralized finance (DeFi), NFTs, and a transparent monetary system.
+    </p>
+  </section>
+
+  <section id="growth">
+    <h2>How to Grow Yourself with Crypto</h2>
+    <ul>
+      <li>Learn about blockchain and DeFi systems.</li>
+      <li>Invest in promising tokens like PMC.</li>
+      <li>Join communities, forums, and crypto groups.</li>
+      <li>Use wallets, swap platforms, and explore staking.</li>
+    </ul>
+  </section>
+
+  <section id="buy">
+    <h2>Buy PMC on PancakeSwap</h2>
+    <p>Swap USDT for PMC using the embedded PancakeSwap widget below:</p>
+    <iframe src="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0xe4a8aed3df947db41f49a9b4adcb8309e179d928&inputCurrency=0x55d398326f99059fF775485246999027B3197955"></iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 Pradhan Mantri Coin. All rights reserved.
+  </footer>
+
+  <script>
+    function copyContract() {
+      const contractText = document.getElementById("contract").innerText;
+      navigator.clipboard.writeText(contractText).then(() => {
+        alert("Contract address copied to clipboard!");
+      });
+    }
+  </script>
+
+</body>
+</html>
